@@ -1,0 +1,16 @@
+img_size: 128
+modalities: [FLAIR, T1ce]   # 2-channel input
+volume_slices: 100
+volume_start_at: 22         # starting slice index
+batch_size: 1
+epochs: 100
+lr: 0.001
+optimizer: adam
+early_stopping_patience: 5
+reduce_lr_factor: 0.2
+reduce_lr_patience: 2
+split:
+  val: 0.20
+  test_within_train: 0.15   # ≈ Train 68% / Val 20% / Test 12%
+metrics: [accuracy, mean_iou, dice, precision, sensitivity, specificity]
+classes: 4                  # background, necrotic/core, edema, enhancing (4←map 4→3)
