@@ -88,6 +88,13 @@ Example predictions and metric tables are saved by predict_and_evaluate.py.
 
 Replace the numbers once you’ve run your final experiment.
 
+### Ethics & limitations
+
+Research/education only—not a medical device. BraTS 2020 is single-site curated; external generalisation is not guaranteed. Dice is the primary segmentation metric; accuracy is less informative when background dominates.
+
+### License
+**MIT**
+
 ### Citation
 [➡️ Cite this repository](./CITATION.cff)
 
