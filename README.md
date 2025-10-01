@@ -88,3 +88,6 @@ Example predictions and metric tables are saved by predict_and_evaluate.py.
 
 Replace the numbers once you’ve run your final experiment.
 
+### Citation
+[➡️ Cite this repository](./CITATION.cff)
+
