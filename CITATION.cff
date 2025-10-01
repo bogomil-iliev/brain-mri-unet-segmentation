@@ -1,0 +1,22 @@
+```yaml
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Brain MRI Tumor Segmentation — U-Net (TensorFlow/Keras)"
+version: "1.0.0"
+date-released: "2025-10-01"
+authors:
+  - family-names: "Iliev"
+    given-names: "Bogomil"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+identifiers:
+  - type: url
+    value: "https://github.com/bogomil-iliev/brain-mri-unet-segmentation"
+repository-code: "https://github.com/bogomil-iliev/brain-mri-unet-segmentation"
+keywords:
+  - medical-imaging
+  - brain-mri
+  - unet
+  - tensorflow
+  - segmentation
+license: "MIT"
+```
