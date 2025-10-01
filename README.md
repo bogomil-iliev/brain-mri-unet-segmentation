@@ -1,6 +1,6 @@
 # Brain MRI Tumor Segmentation — U-Net (TensorFlow/Keras)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](
-  https://colab.research.google.com/github/bogomil-iliev/ultrasound-qc-classifier/blob/main/notebooks/ain7301_ultrasound_qc_pipeline.ipynb
+  https://colab.research.google.com/github/bogomil-iliev/brain-mri-unet-segmentation/blob/main/notebooks/brain_mri_unet_segmentation.ipynb)
 ![Python](https://img.shields.io/badge/python-3.10+-informational)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
