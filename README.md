@@ -23,6 +23,12 @@ End-to-end U-Net pipeline for brain MRI tumor segmentation:
 ---
 
 ## Quickstart
+**Colab (recommended):** click the badge above and run:
+1) Data Preparation > 2) Data Analysis > 3) Data Splitting > 4) Define the Evaluation Metrics and Loss Function. > 5) Model Definition > 6) Train and Save the Model > 7) Load the Trained Model > 8) Metrics Analysis > 9) Make Predictions > 10) Evaluation
+
+**or**
+
+**Local**
 
 ### 1) Environment
 ```bash
