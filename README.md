@@ -31,6 +31,7 @@ pip install -r requirements.txt
 ```
 
 ### 2) Dataset
+This repo does not include images. See data/README.md.
 
 Put MRI images (and masks) under data/raw/ (e.g. data/raw/images/*.png, data/raw/masks/*.png) or edit the constant paths at the top of the scripts (see “Config blocks” below).
 **scripted download:** ```bash python scripts/download_data.py```
