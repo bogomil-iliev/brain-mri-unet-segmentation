@@ -5,10 +5,16 @@
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-End-to-end U-Net pipeline for brain MRI tumor segmentation:
-- Clean, scriptable stages: **download → splits → train → evaluate → inspect**.
-- Loss/metrics include **Dice** (and CE) for segmentation.  
-- Plots and CSV logs to track training & validation.
+Reproduction of a **2D U-Net** for **brain tumour MRI segmentation** on **BraTS 2020** using **FLAIR + T1ce** modalities, generating **100 slices per case** at **128×128** and reporting **Dice / IoU / Accuracy / Precision / Sensitivity / Specificity**.  
+Based on my MSc Computer Vision & Deep Learning portfolio. Full report: `docs/ain7302_report.pdf`.
+
+## Highlights
+- **Input:** 2 channels (FLAIR, T1ce), 128×128; **100 slices** per case starting at slice **22**.  
+- **Splits:** ≈ **Train 68% / Val 20% / Test 12%** (stratified by case IDs).  
+- **Training:** TensorFlow/Keras, Adam (1e-3), early stopping & LR on plateau; model checkpointing.  
+- **Metrics:** Dice, Mean IoU, Accuracy, Precision, Sensitivity, Specificity.
+- **Clean, scriptable stages:** **download → splits → train → evaluate → inspect**. 
+- **Plots and CSV logs** to track training & validation.
 
 > Code is organised under `scripts/`:
 > - `download_data.py` – fetch data to `data/raw/`. :contentReference[oaicite:0]{index=0}  
@@ -20,6 +26,9 @@ End-to-end U-Net pipeline for brain MRI tumor segmentation:
 > - `metrics_and_loss.py` – Dice & CE utilities. :contentReference[oaicite:5]{index=5}  
 > - `data_analysis.py` – quick EDA utilities.
 
+## Dataset
+Use **BraTS 2020** (see dataset license). Place files as described in **data/README.md**.  
+> Note: a one-off filename fix may be needed for `BraTS20_Training_355` (see `scripts/data_preparation_splits.py`).
 ---
 
 ## Quickstart
