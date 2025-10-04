@@ -79,20 +79,30 @@ These scripts are notebook-style and use constants near the top for paths and hy
 ### Repo layout
 ```graphql
 .
+├─ configs/
+│ └─ default.yaml # image size, batch, epochs, etc.
+├─ data/
+│ └─ README.md # expected layout; no data tracked in git
+├─ docs/
+│ ├─ figures/
+│ │ ├─ Predictions.png # sample predictions/overlays
+│ │ └─ Training Graphs.png # loss/metric curves
+│ └─ ain7302_report.pdf # assignment/report
+├─ notebooks/
+│ └─ brain_mri_unet_segmentation.ipynb # end-to-end notebook (Colab-friendly)
 ├─ scripts/
-│  ├─ download_data.py
-│  ├─ data_preparation_splits.py
-│  ├─ train_unet.py
-│  ├─ predict_and_evaluate.py
-│  ├─ examine_training_metrics.py
-│  ├─ model_definition.py
-│  ├─ metrics_and_loss.py
-│  └─ data_analysis.py
-├─ data/                # created by you/scripts (raw, splits, cache)
-├─ models/              # saved weights (by training script)
-├─ logs/                # CSV logs and plots
-├─ requirements.txt
+│ ├─ download_data.py # optional: fetch data -> data/raw
+│ ├─ data_preparation_splits.py # build train/val/test splits (and caching if used)
+│ ├─ train_unet.py # train U-Net; saves weights + history
+│ ├─ predict_and_evaluate.py # inference + metrics; saves figures/JSON
+│ ├─ examine_training_metrics.py # plot/inspect training curves from logs
+│ ├─ model_definition.py # U-Net architecture (Keras)
+│ ├─ metrics_and_loss.py # Dice/IoU/CE + helpers
+│ └─ data_analysis.py # quick EDA utilities
+├─ .gitignore
+├─ CITATION.cff
 ├─ LICENSE
+├─ requirements.txt
 └─ README.md
 ```
 
