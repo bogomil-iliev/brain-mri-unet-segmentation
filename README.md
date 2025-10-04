@@ -103,24 +103,15 @@ These scripts are notebook-style and use constants near the top for paths and hy
 
 **Results from the Reconstructed Model**
 
-<img width="1271" height="69" alt="image" src="https://github.com/user-attachments/assets/79b3300d-134e-4570-ad9e-acb69c255666" />
+<img width="273" height="288" alt="image" src="https://github.com/user-attachments/assets/7d151384-a55f-4bb9-9ce4-00101af785e4" />
 
 **Comparison of the Recreated model with the original results reported**
 
-<img width="273" height="288" alt="image" src="https://github.com/user-attachments/assets/7d151384-a55f-4bb9-9ce4-00101af785e4" />
+<img width="1271" height="69" alt="image" src="https://github.com/user-attachments/assets/79b3300d-134e-4570-ad9e-acb69c255666" />
 
 **Predictions Made with the Reconstructed Model**
 
 <img width="1475" height="1279" alt="image" src="https://github.com/user-attachments/assets/b68276ba-d5b2-40cb-978f-b6e7d67c0d7e" />
-
-
-Mean Dice (val): TBD
-
-Mean Dice (test): TBD
-
-Example predictions and metric tables are saved by predict_and_evaluate.py.
-
-Replace the numbers once you’ve run your final experiment.
 
 ### Ethics & limitations
 
